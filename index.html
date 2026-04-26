@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İyi ki Doğdun Güzelimmmm!!!!</title>
+    <style>
+        body { 
+            background: #0f0f0f; 
+            color: white; 
+            font-family: 'Segoe UI', sans-serif; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            height: 100vh; 
+            margin: 0; 
+            text-align: center;
+            overflow: hidden;
+        }
+        .container {
+            padding: 40px;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 50px rgba(255, 71, 87, 0.2);
+        }
+        .heart {
+            font-size: 80px;
+            color: #ff4757;
+            animation: pulse 1.5s infinite;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); filter: drop-shadow(0 0 5px #ff4757); }
+            50% { transform: scale(1.1); filter: drop-shadow(0 0 20px #ff4757); }
+            100% { transform: scale(1); filter: drop-shadow(0 0 5px #ff4757); }
+        }
+        h1 { font-size: 2.2rem; margin: 0; color: #fff; letter-spacing: 2px; }
+        p { color: #888; font-size: 1.1rem; margin-top: 10px; }
+        .btn {
+            margin-top: 30px;
+            background: transparent;
+            color: #ff4757;
+            border: 2px solid #ff4757;
+            padding: 12px 35px;
+            border-radius: 50px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+        .btn:hover { background: #ff4757; color: white; box-shadow: 0 0 20px #ff4757; }
+        #msg { display: none; margin-top: 30px; animation: slideUp 0.8s ease-out; }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heart">🤍🤍🤍</div>
+        <h1>🪅🪅</h1>
+        <p>Sana küçük bir sürprizim var hayatımm...</p>
+        <button class="btn" onclick="showSurprise()">TIKLA BAKALIM</button>
+        
+        <div id="msg">
+            <h2 style="color: #ff4757; font-size: 1.8rem;">İyi ki Doğdun Sevgilim!</h2>
+            <p style="color: #eee;">Yanımda olduğun her gün için teşekkür ederim aşkımmm. İyiki varsınn iyikii doğmuşsunn hayatımmmm nice yıllara.<br>
+           İnşallah seninle beraber birbirimizin doğum günlerin uzun yıllar boyunca kutlarız seni çokkk seviyorummmmmm 🤍🤍🤍💞💞💞💓💓💓.</p>
+            <div style="font-size: 30px; margin-top: 15px;">🎂🎂🎂</div>
+        </div>
+    </div>
+
+    <script>
+        function showSurprise() {
+            document.getElementById('msg').style.display = 'block';
+            document.querySelector('.btn').style.display = 'none';
+            document.querySelector('p').style.display = 'none';
+            document.querySelector('h1').innerText = "Mutlu Yıllarrrr Nice Yaşlaraa Hayatımmm!";
+        }
+    </script>
+</body>
+</html>
